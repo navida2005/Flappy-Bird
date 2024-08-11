@@ -21,7 +21,7 @@ img.style.display = "none";
 message.classList.add("message-style");
 
 document.addEventListener("keydown", (e) =>{
-    if(e.key == "Enter" && game_state != "Play"){
+    if((e.key == "Enter" || e.key == " ") && game_state != "Play"){
         document.querySelectorAll(".pipe").forEach((e) =>{
             e.remove();
         });
